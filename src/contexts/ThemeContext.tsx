@@ -8,7 +8,7 @@ interface ThemeProviderProps {
   storageKey?: string;
 }
 
-interface התקשרות {
+interface התקשרות { // Preserving existing interface name
   theme: Theme;
   setTheme: (theme: Theme) => void;
 }
