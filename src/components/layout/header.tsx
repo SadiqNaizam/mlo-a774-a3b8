@@ -28,7 +28,7 @@ import {
   LibraryIcon,
   Video,
 } from 'lucide-react';
-import { ThemeToggleButton } from '@/components/ThemeToggleButton'; // Added import
+import { ThemeToggleButton } from '@/components/ThemeToggleButton';
 
 const Header: React.FC = () => {
   console.log('Header loaded');
@@ -50,6 +50,7 @@ const Header: React.FC = () => {
     { icon: <Youtube className="h-5 w-5" />, label: 'Subscriptions', href: '#' }, // Placeholder
     { icon: <LibraryIcon className="h-5 w-5" />, label: 'Library', href: '#' }, // Placeholder
     { icon: <Video className="h-5 w-5" />, label: 'Upload Video', href: '/creator-studio' },
+    { icon: <Settings className="h-5 w-5" />, label: 'Settings', href: '/settings' }, // Added Settings to mobile nav
   ];
 
   return (
@@ -161,9 +162,11 @@ const Header: React.FC = () => {
                 <span>Creator Studio</span>
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Settings className="mr-2 h-4 w-4" />
-              <span>Settings</span>
+            <DropdownMenuItem asChild> {/* Updated Settings link */}
+              <Link to="/settings">
+                <Settings className="mr-2 h-4 w-4" />
+                <span>Settings</span>
+              </Link>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
