@@ -28,6 +28,7 @@ import {
   LibraryIcon,
   Video,
 } from 'lucide-react';
+import { ThemeToggleButton } from '@/components/ThemeToggleButton';
 
 const Header: React.FC = () => {
   console.log('Header loaded');
@@ -116,7 +117,8 @@ const Header: React.FC = () => {
       </div>
 
       {/* User Actions */}
-      <div className="flex items-center gap-3 md:gap-4">
+      <div className="flex items-center gap-2 sm:gap-3 md:gap-4"> {/* Adjusted gap for more space */}
+        <ThemeToggleButton /> {/* Added Theme Toggle Button */}
         <Button variant="ghost" size="icon" asChild className="hidden sm:inline-flex">
           <Link to="/creator-studio">
             <Upload className="h-5 w-5" />
