@@ -52,7 +52,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
+				sidebar: { // Sidebar specific colors, ensure they are used or remove if Sidebar.tsx uses global ones
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
 					primary: 'hsl(var(--sidebar-primary))',
@@ -68,7 +68,7 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
-			fontFamily: { // Added font family definitions
+			fontFamily: { 
         sans: ['var(--font-sans)'],
         body: ['var(--font-body)'],
         heading: ['var(--font-heading)'],
