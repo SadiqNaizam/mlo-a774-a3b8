@@ -41,6 +41,7 @@
     --font-body: var(--font-sans);
     --font-heading: var(--font-sans); /* Using same font for headings as per spec */
 
+    /* Sidebar specific variables - note: current Sidebar.tsx uses global --background and --accent */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -82,15 +83,15 @@
     /* Updated Ring Color for Dark Mode (Slightly lighter blue for visibility) */
     --ring: 211 100% 60%;
 
-    /* Sidebar variables for dark mode remain, may need adjustment based on new primary */
+    /* Sidebar variables for dark mode */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%; /* Consider if this should align with the new main primary */
+    --sidebar-primary: 224.3 76.3% 48%; 
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%; /* Consider if this should align with new main ring */
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
