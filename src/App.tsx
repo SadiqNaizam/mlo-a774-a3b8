@@ -11,6 +11,7 @@ import CreatorStudioPage from "./pages/CreatorStudioPage"; // Assuming .tsx
 import Homepage from "./pages/Homepage"; // Assuming .tsx
 import SearchResultsPage from "./pages/SearchResultsPage"; // Assuming .tsx
 import VideoWatchPage from "./pages/VideoWatchPage"; // Assuming .tsx
+import SettingsPage from "./pages/SettingsPage"; // Added SettingsPage
 import NotFound from "./pages/NotFound"; // Assuming .tsx
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/creator-studio" element={<CreatorStudioPage />} />
               <Route path="/search-results" element={<SearchResultsPage />} />
               <Route path="/video-watch" element={<VideoWatchPage />} />
+              <Route path="/settings" element={<SettingsPage />} /> {/* Added SettingsPage route */}
               {/* catch-all */}
               <Route path="*" element={<NotFound />} />
             </Routes>
